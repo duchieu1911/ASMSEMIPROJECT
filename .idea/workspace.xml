@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2a905a-c189-4a88-966b-5092e77457e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/product/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/product/detail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/product/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/create.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +173,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
@@ -230,12 +227,26 @@
       <workItem from="1689814784202" duration="503000" />
       <workItem from="1689815307676" duration="17000" />
       <workItem from="1689816538785" duration="8818000" />
-      <workItem from="1689986779019" duration="11047000" />
+      <workItem from="1689986779019" duration="11107000" />
+      <workItem from="1690130548859" duration="8828000" />
+      <workItem from="1690209516516" duration="2029000" />
     </task>
+    <task id="LOCAL-00001" summary="add detail function">
+      <created>1689999640697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689999640697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add detail function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add detail function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1689697458536">
@@ -246,10 +257,15 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="66" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.720@0.0.1280.720" timestamp="1689697385804" />
-    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1689992073575">
+    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1690141764647">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1690141764647" />
     <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1689992073575" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1689999640082">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1689999640082" />
     <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1689988305108">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -263,14 +279,14 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1689995911193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1689986780571">
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1690246839954">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1689780052193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1689986780571" />
-    <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1689990131201">
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1690246839954" />
+    <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1690246852664">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1689990131201" />
+    <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1690246852664" />
   </component>
 </project>
