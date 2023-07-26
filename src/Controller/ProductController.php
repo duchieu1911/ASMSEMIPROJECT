@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Entity\Product;
 use App\Form\ProductType;
 use Doctrine\Persistence\ManagerRegistry;
-use http\Message;
 use phpDocumentor\Reflection\DocBlock\Tags\Reference\Reference;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
@@ -34,7 +33,7 @@ class ProductController extends AbstractController
     public function detailsAction(ManagerRegistry $doctrine, $id)
     {
         $products = $doctrine->getRepository('App\Entity\Product')->find($id);
-        return $this->render ('product/detail.html.twig',['product'=>$products]);
+        return $this->render('product/detail.html.twig', ['product' => $products]);
     }
 
 #[route ('/product/delete/{id}', name: 'product_delete')]
@@ -43,7 +42,6 @@ class ProductController extends AbstractController
         $em = $doctrine->getManager();
         $product = $em->getRepository('App\Entity\Product')->find($id);
         if (!is_null($product)) {
-
 
 
             $em->remove($product);
@@ -62,14 +60,12 @@ class ProductController extends AbstractController
         return $this->redirectToRoute('app_product');
     }
 
-    #route ('/product/create',name: 'product_create', methods={"GET", "POST"})
-    public function createAction(ManagerRegistry$doctrine,Request $request, SluggerInterface $slugger)
+    #[Route('/product/create', name:'create_product', methods:['GET', 'POST'])]
+    public function createAction(ManagerRegistry $doctrine, Request $request, SluggerInterface $slugger)
     {
         $product = new Product();
         $form = $this->createForm(ProductType::class, $product);
-
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             // uplpad file
             $productImage = $form->get('productImage')->getData();
@@ -92,7 +88,7 @@ class ProductController extends AbstractController
                     );// ... handle exception if something happens during file upload
                 }
                 $product->setProductImage($newFilename);
-            }else{
+            } else {
                 $this->addFlash(
                     'error',
                     'Cannot upload'
@@ -104,36 +100,64 @@ class ProductController extends AbstractController
 
             $this->addFlash(
                 'notice',
-                'Product Added'
+                'product Added'
             );
-            return $this->redirectToRoute('app_product');
+            return $this->redirectToroute('app_product');
         }
-        return $this->renderForm('product/create.html.twig', ['form' => $form,]);
+
+        return $this->renderForm('product/create.html.twig', ['form' => $form]);
+
+
     }
 
 
 
-    #[route('/', name: 'product_edit')]
-    public function editAction(ManagerRegistry $doctrine, int $id, Request $request): Response
-    {
+
+#[Route('/product/edit/{id}', name: 'product_edit')]
+    public function editAction(ManagerRegistry $doctrine, int $id,Request $request,SluggerInterface $slugger): Response{
         $entityManager = $doctrine->getManager();
         $product = $entityManager->getRepository(Product::class)->find($id);
         $form = $this->createForm(ProductType::class, @$product);
         $form->handleRequest($request);
+        $categories = $doctrine->getRepository('App\Entity\Category')->findAll();
+
 
         if ($form->isSubmitted() && $form->isValid()) {
+            //upload file
+            $productImage = $form->get('productImage')->getData();
+            if ($productImage) {
+                $originalFilename = pathinfo($productImage->getClientOriginalName(), PATHINFO_FILENAME);
+                // this is needed to safely include the file name as part of the URL
+                $safeFilename = $slugger->slug($originalFilename);
+                $newFilename = $safeFilename . '-' . uniqid() . '.' . $productImage->guessExtension();
+                // Move the file to the directory where brochures are stored
+                try {
+                    $productImage->move(
+                        $this->getParameter('productImages_directory'),
+                        $newFilename
+                    );
+                } catch (FileException $e) {
+                    $this->addFlash(
+                        'error',
+                        'Cannot upload'
+                    );// ... handle exception if something happens during file upload
+                }
+                $product->setProductImage($newFilename);
+            }else{
+                $this->addFlash(
+                    'notice',
+                    'Edit success'
+                );// ... handle exception if something happens during file upload
+            }
 
             $em = $doctrine->getManager();
             $em->persist($product);
             $em->flush();
-            return $this->redirectToRoute('product_list', [
+            return $this->redirectToRoute('app_product', [
                 'id' => $product->getId()
             ]);
 
         }
-
-
-        return $this->renderForm('product/edit.html.twig', ['form' => $form,]);
+        return $this->renderForm('product/edit.html.twig', ['form' => $form]);
     }
-
 }
