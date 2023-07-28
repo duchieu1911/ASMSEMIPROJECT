@@ -40,13 +40,22 @@
                 {# <li><a href="{{ path('todo_create') }}">Add Product</a></li> #}
                 <li><a href="{{ path('create_product') }}">Add Product</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right"> {# Added 'navbar-right' class #}
-                <li>
-                    <a href="{{ path('app_login') }}" class="btn btn-primary">Login</a>
-                </li>
-                <li>
-                    <a href="{{ path('app_register') }}" class="btn btn-success">Register</a>
-                </li>
+            <ul class="nav navbar-nav navbar-right">
+                {% if not app.user %}
+                    <li>
+                        <a href="{{ path('app_login') }}" class="btn btn-primary">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('app_register') }}" class="btn btn-success">Register</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="#" class="navbar-text">{{ app.user.email }}</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('app_logout') }}" class="btn btn-danger">Logout</a>
+                    </li>
+                {% endif %}
             </ul>
         </div><!--/.nav-collapse -->
     </div>
