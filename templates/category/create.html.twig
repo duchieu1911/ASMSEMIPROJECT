@@ -8,7 +8,7 @@
     <link rel="icon" href="../../favicon.ico">
     <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
 
-    <title>{% block title %}Add Product{% endblock %}</title>
+    <title>{% block title %}Add Category{% endblock %}</title>
 
     <!-- Favicons -->
     <link href="/assets/img/favicon.png" rel="icon">
@@ -36,7 +36,7 @@
     {{ form_start(form) }}
     <div class="form-group">
         <label for="category">Category</label>
-        {{ form_widget(form.name,{
+        {{ form_widget(form.category_name,{
             'attr':{
                 'class':'form-control'
             }

@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2a905a-c189-4a88-966b-5092e77457e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/category/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +236,7 @@
       <workItem from="1690516715892" duration="297000" />
       <workItem from="1690544519509" duration="5473000" />
       <workItem from="1690594302082" duration="4900000" />
-      <workItem from="1690683730603" duration="14750000" />
+      <workItem from="1690683730603" duration="18683000" />
     </task>
     <task id="LOCAL-00001" summary="add detail function">
       <created>1689999640697</created>
@@ -308,5 +306,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1690551767262" />
+    <state x="303" y="41" key="search.everywhere.popup" timestamp="1690730558239">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1690730558239" />
   </component>
 </project>

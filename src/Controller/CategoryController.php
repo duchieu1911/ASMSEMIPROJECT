@@ -41,6 +41,6 @@ class CategoryController extends AbstractController
             );
             return $this->redirectToRoute('app_category');
         }
-        return $this->renderForm('category/create.html.twig', ['form' => $form,]);
+        return $this->renderForm('category/create.html.twig', ['form' => $form]);
     }
 }

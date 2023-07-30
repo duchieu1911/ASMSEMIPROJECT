@@ -15,7 +15,7 @@
             {% for category in categories %}
                 <tr>
                     <th scope="row">{{ category.id }}</th>
-                    <td><a href="{{path('app_category',{'id':category.id})}} ">{{ category.CategoryName }}</a></td>
+                    <td><a href="{{path('app_category',{'id':category.id})}} ">{{ category.categoryName }}</a></td>
 
                     <td>
 {#                        <a href="{{path('app_category',{'id':category.id})}} " class='btn btn-success'>View</a>#}
