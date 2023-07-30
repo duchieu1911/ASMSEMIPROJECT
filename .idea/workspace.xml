@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2a905a-c189-4a88-966b-5092e77457e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,16 +175,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DemoSymfonyWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Form" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dienm\ASMSEMIPROJECT\src\Form" />
       <recent name="C:\Users\dienm\ASMSEMIPROJECT\templates" />
+      <recent name="C:\Users\dienm\ASMSEMIPROJECT\src\Controller" />
       <recent name="C:\Users\dienm\ASMSEMIPROJECT\templates\product" />
       <recent name="C:\Users\dienm\ASMSEMIPROJECT\templates\Login" />
-      <recent name="C:\Users\dienm\ASMSEMIPROJECT\src\Repository" />
-      <recent name="C:\Users\dienm\ASMSEMIPROJECT\src\Form" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.console">
@@ -231,6 +237,8 @@
       <workItem from="1690443316910" duration="770000" />
       <workItem from="1690516715892" duration="297000" />
       <workItem from="1690544519509" duration="5473000" />
+      <workItem from="1690594302082" duration="4900000" />
+      <workItem from="1690683730603" duration="14750000" />
     </task>
     <task id="LOCAL-00001" summary="add detail function">
       <created>1689999640697</created>
@@ -261,24 +269,28 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1689697458536" />
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1690687107180">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1690687107180" />
     <state x="421" y="66" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1689697385804">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="66" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.720@0.0.1280.720" timestamp="1689697385804" />
-    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1690338808752">
+    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1690689542193">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1690141764647" />
-    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1690338808752" />
+    <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1690689542193" />
     <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1690246868905">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1690246868905" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1690544981528">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1690688279377">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1689780191205" />
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1690544981528" />
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1690688279377" />
     <state x="142" y="3" key="SettingsEditor" timestamp="1689697471071">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -287,11 +299,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1689995911193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1690544697795">
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1690683732904">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1689780052193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1690544697795" />
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1690683732904" />
     <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1690551767262">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

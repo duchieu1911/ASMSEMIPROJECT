@@ -10,7 +10,7 @@
     <link rel="icon" href="../../favicon.ico">
     <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
 
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Welcome to Martin clothes{% endblock %}</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -39,6 +39,7 @@
                 <li class="active"><a href="{{ path('app_product') }}">Home</a></li>
                 {# <li><a href="{{ path('todo_create') }}">Add Product</a></li> #}
                 <li><a href="{{ path('create_product') }}">Add Product</a></li>
+                <li><a href="{{ path('app_category') }}">Category</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if not app.user %}

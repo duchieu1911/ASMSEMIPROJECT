@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use App\Entity\Product;
 use App\Form\ProductType;
 use Doctrine\Persistence\ManagerRegistry;
@@ -26,6 +27,15 @@ class ProductController extends AbstractController
             'controller_name' => 'ProductController',
             'products' => $products,
             'categories' => $categories
+        ]);
+    }
+
+#[Route('/category', name: 'app_category')]
+    public function listAction(ManagerRegistry $doctrine): Response
+    {
+        $categories = $doctrine->getRepository( 'App\Entity\Category')->findAll();
+
+        return $this->render('category/index.html.twig', ['categories' => $categories
         ]);
     }
 
