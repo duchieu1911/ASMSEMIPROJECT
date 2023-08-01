@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6a2a905a-c189-4a88-966b-5092e77457e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/category/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,10 +168,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Form" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
@@ -236,7 +235,9 @@
       <workItem from="1690516715892" duration="297000" />
       <workItem from="1690544519509" duration="5473000" />
       <workItem from="1690594302082" duration="4900000" />
-      <workItem from="1690683730603" duration="18683000" />
+      <workItem from="1690683730603" duration="18684000" />
+      <workItem from="1690819952899" duration="342000" />
+      <workItem from="1690854101712" duration="19112000" />
     </task>
     <task id="LOCAL-00001" summary="add detail function">
       <created>1689999640697</created>
@@ -297,15 +298,19 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1689995911193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1690683732904">
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1690854103449">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720/1920.-91.1910.1334@0.0.1280.720" timestamp="1689780052193" />
-    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1690683732904" />
+    <state x="337" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1690854103449" />
     <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1690551767262">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="450" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1690551767262" />
+    <state x="297" y="161" key="run.anything.popup" timestamp="1690859057259">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="297" y="161" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1690859057259" />
     <state x="303" y="41" key="search.everywhere.popup" timestamp="1690730558239">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

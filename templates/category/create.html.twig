@@ -1,49 +1,99 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
+{% block title %}{% endblock %}
 
-    <title>{% block title %}Add Category{% endblock %}</title>
+{% block stylesheets %}
+    <style>
+        body {
+            font-family: 'Calibri', Calibri;
+            font-size: 16px;
+            background-color: #f5f5f5;
+        }
 
-    <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon">
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        .container {
+            padding-top: 20px;
+        }
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        .card-body {
+            padding: 20px;
+        }
 
-    <!-- Template Main CSS File -->
-    <link href="/assets/css/main.css" rel="stylesheet">
-    {% block stylesheets %}{% endblock %}
-</head>
+        .card-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 30px;
+            margin-right: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-back {
+            background-color: #33dc3f;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 30px;
+        }
+
+        .btn-back:hover {
+            background-color: #c82333;
+        }
+    </style>
+{% endblock %}
 
 {% block body %}
-    {{ form_start(form) }}
-    <div class="form-group">
-        <label for="category">Category</label>
-        {{ form_widget(form.category_name,{
-            'attr':{
-                'class':'form-control'
-            }
-        }) }}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Create a New Category</h2>
+                        <hr>
+                        {{ form_start(form) }}
+                        <div class="form-group">
+                            {{ form_label(form.category_name, 'Category', {'label_attr': {'class': 'control-label'}}) }}
+                            {{ form_widget(form.category_name, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="text-center">
+                            <div class="btn-group"> <!-- Button group to place buttons in a horizontal line -->
+                                <button type="submit" name="category_create" class="btn btn-primary">Create</button>
+                                <a href="{{ path('app_product') }}" class="btn btn-back">Back to Product List</a>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <input type="submit" name="category_create" value="Create" class="btn btn-primary"/>
-    {{ form_end(form) }}
 {% endblock %}
+
+
+
+
+
+
 
 
